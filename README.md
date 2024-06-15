@@ -22,3 +22,10 @@ the output file will in `dist` folder
 
 `node "..\dist-insertTools\packModZip.js" "boot.json"`
 
+---
+
+only the `src_inject/inject_early.js` file or require by it will be build by webpack
+
+the `src_load/earlyload.js` and `src_load/preload.js` still a normal js file
+
+

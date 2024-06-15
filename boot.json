@@ -4,13 +4,13 @@
   "styleFileList": [
   ],
   "scriptFileList_earlyload": [
-    "dist/webpack_earlyload.js"
+    "src_load/earlyload.js"
   ],
   "scriptFileList_inject_early": [
     "dist/webpack_inject_early.js"
   ],
   "scriptFileList_preload": [
-    "dist/webpack_preload.js"
+    "src_load/preload.js"
   ],
   "scriptFileList": [
   ],
@@ -24,6 +24,24 @@
     "README.md"
   ],
   "addonPlugin": [
+    {
+      "modName": "ReplacePatcher",
+      "addonName": "ReplacePatcherAddon",
+      "modVersion": "1.0.0",
+      "params": {
+        "js": [
+        ],
+        "css": [
+        ],
+        "twee": [
+          {
+            "passageName": "Bedroom",
+            "from": "You are in your bedroom.",
+            "to": "You are in your bedroom.\n<<link [[aaaaabbbbbccccc('aaa')|][ccccccccc()]]>><</link>>"
+          }
+        ]
+      }
+    }
   ],
   "dependenceInfo": [
     {

@@ -8,9 +8,7 @@ const isProduction = process.env.NODE_ENV == 'production';
 const config = {
   entry: {
     // Your entry file
-    webpack_earlyload: './src/earlyload.js',
-    webpack_inject_early: './src/inject_early.js',
-    webpack_preload: './src/preload.js',
+    webpack_inject_early: './src_inject/inject_early.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
